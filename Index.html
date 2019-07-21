@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LANDING PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="./javascript/list-products.js"></script>
+    <script src="./javascript/validate-email.js"></script>
+
+</head>
+
+<body onload="moreProducts()">
+    <header>
+        <div id="header-text">
+            <h5>Uma seleção de produtos</h5>
+            <h2>Especial para você</h2>
+            <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+        </div>
+        <div class="row" id="header-buttons">
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-3 ">
+                <button id="linx-button" class="btn btn-primary" type="button">Conheça a Linx</button>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-3">
+                <button id="help-code-button" class="btn btn-primary" type="button">Ajude o algoritimo</button>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-3">
+                <button id="your-products-button" class="btn btn-primary" type="button">Seus produtos</button>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-3">
+                <button id="share-button" class="btn btn-primary" type="button">Compartilhe</button>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div id="selection-title">
+            <h6>Sua seleção especial</h6>
+        </div>
+    </article>
+    <article>
+        <div id="root"></div>
+    </article>
+    <article>
+        <div class="row" id="more-button">
+            <button class="btn btn-primary btn-lg btn-block" onclick="moreProducts()">Espiar mais produtos</button>
+        </div>
+    </article>
+    <article id="form-newsletter">
+        <div id="newsletter">
+            <h5>Compartilhe a novidade</h5>
+            <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+        </div>
+        <div>
+            <form name="form" onsubmit="return (validacaoEmail())">
+                <div class="form-group" id="form-group">
+                    <div id="newsletteralert"></div>
+                    <div class="row" id="nl-form">
+                        <div class="col-lg-6">
+                            <label for="nameNewsletter">Nome do seu amigo</label>
+                            <input type="text" class="form-control" id="nameNewsletter">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="emailNewsletter">Email</label>
+                            <input type="text" class="form-control" name="email" id="emailNewsletter" placeholder="example@mail.com">
+                        </div>
+                    </div>
+                    <div id="nl-button">
+                        <button type="button" class="btn btn-primary" onclick="validacaoEmail(form.email)">Enviar
+                            agora!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+        </div>
+    </article>
+</body>
+
+</html>

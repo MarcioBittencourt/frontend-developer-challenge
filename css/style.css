@@ -1,0 +1,55 @@
+html {
+    overflow-x: hidden;
+}
+
+header {
+	height: 350px;
+	background-color: hsl(34, 100%, 50%);
+    margin-bottom: 50px;
+    
+}
+
+#header-text {
+    text-align: center;
+    color: white;
+    margin-bottom: 80px;
+}
+
+#header-buttons {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#selection-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#root {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#root p {
+    font-size: 8px;
+}
+
+#more-button {
+    margin-bottom: 30px;
+}
+
+#newsletter {
+    text-align: center;
+}
+
+#form-newsletter {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#nl-form {
+ margin-bottom: 20px;
+}
+#nl-button {
+    text-align: center;
+}

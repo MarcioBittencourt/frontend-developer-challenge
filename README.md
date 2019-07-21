@@ -1,72 +1,34 @@
-# Desafio | Frontend Developer
+# Exemplo | Landing Page
 
-> **ATENÇÃO:** Antes de começar, se [cadastre na vaga](https://linxneemuchaordic.recruiterbox.com/) via Recruiterbox **=]**
+> Este é um exemplo de landing page criado para a vaga de estagio frontend developer para o time de Customer Operations da Linx Impulse.
+O objetivo do site consiste em criar uma grade de produtos de duas linhas e quatro colunas para cada produto retornado da API,
+repetindo o processo a cada interação com o botão "vizualisar mais produtos", gerando mais oito cards para a grade existente,
+e um formulario de newsletter com campos validados.
 
-Olá! Seja bem vindo ao teste para a vaga de **Frontend Developer** para o time de **Customer Operations** da Linx Impulse.
+As tecnoligias usadas foram HTML, CSS, BOOTSTRAP e JAVASCRIPT.
+---
 
-Preparamos um teste que abordará seus conhecimentos em **HTML**, **CSS** e **Javascript**. Você será encaixado na vaga de acordo com seu resultado.
+## vizualisação da pagina
+
+Para conferir os resultados.
+acessar este link "".
 
 ---
 
-## Sobre o desafio
+### Heroku | instruções
 
-O desafio consiste no *layout* de uma *landing page* com uma grade de produtos e um formulário de *newsletter*. Seu principal objetivo é transformar este *layout* em uma página funcional.
+criar conta no heroku
 
-**Link do layout**: https://xd.adobe.com/spec/aa1c5781-ecac-46c9-7032-b66139998404-dc2d/
+no terminal o comando “heroku login” é utilizado para autenticar seu usuário no CLI.
 
-**Endpoint da API**: https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1
+o comando “heroku create <nomedoprojeto>” cria um projeto e já configura o repositório necessário dentro do ambiente do heroku.
 
-### Layout
+para subir o projeto, precisamos configurá-lo para utilizar o repositório do git do próprio heroku. Isso deve ser feito com os seguintes comandos,
+com o detalhe que a url utilizada para o repositório (“https://git.heroku.com/testelandingpagelinx.git”)
 
-Você terá que implementar o *layout* de acordo com esse **[mock](https://xd.adobe.com/spec/aa1c5781-ecac-46c9-7032-b66139998404-dc2d/)**. O *mock* contém a estrutura do layout e todo o estilo da página.
+ um projeto apenas com html, javascript e css não consegue ser detectado no heroku.
+ então utilizar um arquivo php, como index e incluir o arquivo html do nosso projeto, fazendo com que ele seja renderizado:
 
-É importante se ater aos detalhes de tamanho e espaçamento entre os elementos da página, construindo o HTML mais semântico possível utilizando-se das tags do HTML5.
+podemos commitar e tentar dar o push para o repositório (tradicional, “git add”, “git commit -m” e “git push”).
 
-### Comportamento:
 
-Para preencher a página com as informações dos produtos, você terá que consultar esta **[API](https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1)** de forma paginada, sendo que cada página consultada retornará as informações de **8 produtos** e um **link para a próxima página**.
-
-Assim que obter os dados, você deverá implementar os seguintes pontos:
-
-- Para cada **produto** retornado pela API, um **card de produto** com as respectivas informações deve ser criado na grade de produtos;
-- Ao clicar no botão **Ainda mais produtos aqui!** a próxima página da API deve ser consultada, gerando mais **8 produtos** na grade existente, abaixo dos produtos já carregados pela primeira requisição;
-- O formulário de *newsletter* com o título **Compartilhe a novidade** deve ter seus campos de *input* validados de acordo com o conteúdo (ex: O campo de email deve conter um email válido);
-
----
-
-## Instruções
-
-- Faça um **[fork](https://help.github.com/en/articles/fork-a-repo)** deste repositório e crie uma branch com o seu nome (ex: `nome-sobrenome`) que irá conter o código do seu desafio;
-- Faça *commits* ao longo do seu desenvolvimento, isso nos ajudará a entender sua linha de raciocínio ;)
-- Substitua este **README.md** por outro que contenha as informações de *setup* e a descrição do seu projeto;
-- Suba um *live preview* do seu desafio em um dos provedores a seguir, isso nos ajudará a testar sua implementação:
-    - **[Now](https://zeit.co/now)**
-    - **[Heroku](https://www.heroku.com)**
-    - **[Netifly](https://www.netlify.com/)**
-    - Qualquer outro semelhante
-- Assim que concluir o seu desafio, abra um **[pull request](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)** para o [repositório do desafio](https://github.com/iurykrieger/frontend-developer-challenge) com suas alterações e com o link do *live preview* na descrição;
-
----
-
-## Dicas
-
-> Crie uma estrutura de arquivos organizada para suas implementações
-
-> Construa o CSS de forma bem estruturada e em um arquivo separado.
-
-> Evite poluir o escopo global do Javascript
-
-> Documente suas funções e seja o mais conciso possível ao escrever seu código
-
-> Seu README.md deve conter as instruções necessárias para qualquer pessoa fazer seu projeto funcionar
-
-> Your code will be better understood in English ;)
-
-## Não conseguiu fazer tudo?
-A sua forma de priorizar a entrega também vai ser considerada. Escreva no README.md o que você conseguiu e não conseguiu implementar, descrevendo porque você preferiu priorizar desta maneira.
-
----
-
-Em caso de dúvidas, [abra uma issue](https://github.com/chaordic/frontend-intern-challenge/issues).
-
-**Boa sorte =]**
