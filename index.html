@@ -64,7 +64,7 @@
             <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
         </div>
         <div>
-            <form name="form" onsubmit="return (validacaoEmail())">
+            <form name="form">
                 <div class="form-group" id="form-group">
                     <div id="newsletteralert"></div>
                     <div class="row" id="nl-form">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div id="nl-button">
-                        <button type="button" class="btn btn-primary" onclick="validacaoEmail(form.email)">Enviar
+                        <button type="button" class="btn btn-primary" onclick="validateEmail(form.email)">Enviar
                             agora!</button>
                     </div>
                 </div>
