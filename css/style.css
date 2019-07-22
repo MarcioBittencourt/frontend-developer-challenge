@@ -6,12 +6,11 @@ header {
 	height: 350px;
 	background-color: hsl(34, 100%, 50%);
     margin-bottom: 50px;
-    
+    padding-top: 50px;
 }
 
 #header-text {
     text-align: center;
-    color: white;
     margin-bottom: 80px;
 }
 
@@ -45,6 +44,7 @@ header {
 #form-newsletter {
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 70px;
 }
 
 #nl-form {
@@ -52,4 +52,14 @@ header {
 }
 #nl-button {
     text-align: center;
+}
+
+footer {
+    height: 175px;
+    text-align: center;
+    background-color: hsl(34, 100%, 50%);
+}
+
+footer #footer-text {
+    padding-top: 50px;
 }
